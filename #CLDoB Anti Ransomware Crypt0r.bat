@@ -1,7 +1,8 @@
+@echo off
+@chcp 65001 1> NUL 2> NUL
 title v1.2.0.0
 
 :main
-@echo off
 mode con cols=41 lines=6
 cls
 
@@ -106,18 +107,18 @@ echo.
 call :c 00 "          "
 echo.
 call :c 00 "          "
-call :c CF "     ��ΰ� ����̺� �ֻ��� �Դϴ�. ������ ����Ͻðڽ��ϱ�?    "
+call :c CF "     경로가 드라이브 최상위 입니다. 정말로 계속하시겠습니까?    "
 echo.
 call :c 00 "          "
 call :c CF " The path is at the root of the drive. Do you want to continue? "
 echo.
 call :c 00 "          "
-call :c CF "        �ѫ����ɫ髤�֪���߾�ȪǪ����۪�Ȫ��˪��ު���?         "
+call :c CF "        パスがドライブの最上位です。ほんとうにしますか?         "
 echo.
 call :c 00 "          "
 echo.
 call :c 00 "                                        "
-call :c CF " Y��N "
+call :c CF " Y／N "
 choice /c:yn > nul
 if %errorlevel% equ 1 goto RE_WARNING
 if %errorlevel% equ 2 goto main
@@ -138,18 +139,18 @@ echo.
 call :c 00 "          "
 echo.
 call :c 00 "          "
-call :c CF "    ��� å���� ���ο��� �ֽ��ϴ�. �����Ͻø� Y�� �����ּ���.   "
+call :c CF "    모든 책임은 본인에게 있습니다. 동의하시면 Y를 눌러주세요.   "
 echo.
 call :c 00 "          "
 call :c CF "     All responsibilities are to you. If agree, press the Y.    "
 echo.
 call :c 00 "          "
-call :c CF "    ��ƪ���������Ѫ˪���ު������򪷪���Y���㪷�ƪ���������   "
+call :c CF "    全ての責任は本人にあります。同意したらYを押してください。   "
 echo.
 call :c 00 "          "
 echo.
 call :c 00 "                                        "
-call :c CF " Y��N "
+call :c CF " Y／N "
 
 choice /c:yn > nul
 if %errorlevel% equ 1 goto hidden
@@ -230,7 +231,7 @@ call :c F0 " 376F3ED323FC2A253DDC2834BFC9F59C753170C0 "
 call :c 10 " "
 echo.
 
-set /p command=��
+set /p command=└
 if "%command%"=="88224646ba" goto konami
 if "%command%"=="88224646BA" goto konami
 goto hidden_konami
@@ -256,13 +257,13 @@ call :c FC "I"
 call :c FD "O"
 call :c F1 "N"
 call :c F0 "S"
-call :c FC "��"
+call :c FC "！"
 echo.
 
 timeout /t 2 /nobreak > nul
 
 call :c 00 "              "
-call :c 4F "Exit to press a key��"
+call :c 4F "Exit to press a key！"
 pause>nul
 exit
 
