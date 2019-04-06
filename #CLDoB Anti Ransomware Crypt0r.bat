@@ -1,7 +1,7 @@
-@echo off
 title v1.2.0.0
 
 :main
+@echo off
 mode con cols=41 lines=6
 cls
 
@@ -106,18 +106,18 @@ echo.
 call :c 00 "          "
 echo.
 call :c 00 "          "
-call :c CF "     °æ·Î°¡ µå¶óÀÌºê ÃÖ»óÀ§ ÀÔ´Ï´Ù. Á¤¸»·Î °è¼ÓÇÏ½Ã°Ú½À´Ï±î?    "
+call :c CF "     ï¿½ï¿½Î°ï¿½ ï¿½ï¿½ï¿½ï¿½Ìºï¿½ ï¿½Ö»ï¿½ï¿½ï¿½ ï¿½Ô´Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½Ã°Ú½ï¿½ï¿½Ï±ï¿½?    "
 echo.
 call :c 00 "          "
 call :c CF " The path is at the root of the drive. Do you want to continue? "
 echo.
 call :c 00 "          "
-call :c CF "        «Ñ«¹ª¬«É«é«¤«ÖªÎõÌß¾êÈªÇª¹¡£ªÛªóªÈª¦ªËª·ªÞª¹ª«?         "
+call :c CF "        ï¿½Ñ«ï¿½ï¿½ï¿½ï¿½É«é«¤ï¿½Öªï¿½ï¿½ï¿½ß¾ï¿½ÈªÇªï¿½ï¿½ï¿½ï¿½Ûªï¿½Èªï¿½ï¿½Ëªï¿½ï¿½Þªï¿½ï¿½ï¿½?         "
 echo.
 call :c 00 "          "
 echo.
 call :c 00 "                                        "
-call :c CF " Y£¯N "
+call :c CF " Yï¿½ï¿½N "
 choice /c:yn > nul
 if %errorlevel% equ 1 goto RE_WARNING
 if %errorlevel% equ 2 goto main
@@ -138,18 +138,18 @@ echo.
 call :c 00 "          "
 echo.
 call :c 00 "          "
-call :c CF "    ¸ðµç Ã¥ÀÓÀº º»ÀÎ¿¡°Ô ÀÖ½À´Ï´Ù. µ¿ÀÇÇÏ½Ã¸é Y¸¦ ´­·¯ÁÖ¼¼¿ä.   "
+call :c CF "    ï¿½ï¿½ï¿½ Ã¥ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ã¸ï¿½ Yï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.   "
 echo.
 call :c 00 "          "
 call :c CF "     All responsibilities are to you. If agree, press the Y.    "
 echo.
 call :c 00 "          "
-call :c CF "    îïªÆªÎô¡ìòªÏÜâìÑªËª¢ªêªÞª¹¡£ÔÒëòª·ª¿ªéYªòäãª·ªÆª¯ªÀªµª¤¡£   "
+call :c CF "    ï¿½ï¿½Æªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÑªËªï¿½ï¿½ï¿½Þªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½òª·ªï¿½ï¿½ï¿½Yï¿½ï¿½ï¿½ãª·ï¿½Æªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   "
 echo.
 call :c 00 "          "
 echo.
 call :c 00 "                                        "
-call :c CF " Y£¯N "
+call :c CF " Yï¿½ï¿½N "
 
 choice /c:yn > nul
 if %errorlevel% equ 1 goto hidden
@@ -230,7 +230,7 @@ call :c F0 " 376F3ED323FC2A253DDC2834BFC9F59C753170C0 "
 call :c 10 " "
 echo.
 
-set /p command=¦¦
+set /p command=ï¿½ï¿½
 if "%command%"=="88224646ba" goto konami
 if "%command%"=="88224646BA" goto konami
 goto hidden_konami
@@ -256,13 +256,13 @@ call :c FC "I"
 call :c FD "O"
 call :c F1 "N"
 call :c F0 "S"
-call :c FC "£¡"
+call :c FC "ï¿½ï¿½"
 echo.
 
 timeout /t 2 /nobreak > nul
 
 call :c 00 "              "
-call :c 4F "Exit to press a key£¡"
+call :c 4F "Exit to press a keyï¿½ï¿½"
 pause>nul
 exit
 
