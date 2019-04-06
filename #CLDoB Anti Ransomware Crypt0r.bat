@@ -1,5 +1,5 @@
-@echo off
 @chcp 65001 1> NUL 2> NUL
+@echo off
 title v1.2.0.0
 
 :main
